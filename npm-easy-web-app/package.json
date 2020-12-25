@@ -10,6 +10,7 @@
   "author": "Todd Rylaarsdam",
   "license": "ISC",
   "dependencies": {
-    "easy-web-app": "^2.9.4"
+    "easy-web-app": "^2.9.4",
+    "npmlog": "^4.1.2"
   }
 }
