@@ -1,0 +1,15 @@
+{
+  "name": "npm-easy-web-app",
+  "version": "1.0.0",
+  "description": "testing npm package easy web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Todd Rylaarsdam",
+  "license": "ISC",
+  "dependencies": {
+    "easy-web-app": "^2.9.4"
+  }
+}
