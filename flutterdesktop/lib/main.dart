@@ -52,7 +52,18 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.black,
         body: Center(
           child: Container(
-            
+            width: 300,
+            height: 200,
+            decoration: BoxDecoration(
+              color: Colors.green,
+              borderRadius: BorderRadius.all(Radius.circular(10.0))
+            ),
+            child: new Center(
+              child: new Text(
+                "Rounded Corner Rectangle Shape",
+                style: TextStyle(color: Colors.white, fontSize:22),
+                textAlign: TextAlign.center,)
+            )
           )
         ),
       ),
