@@ -55,7 +55,16 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         backgroundColor: Colors.grey[900],
         body: Center(
-          child: ComponentWidget(name: "Comp")
+          child: new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ComponentWidget(name: "Comp0"),
+              new Padding(
+                padding: EdgeInsets.all(20)
+              ),
+              ComponentWidget(name: "Comp1")
+            ]
+          )
         )
       ),
     );
