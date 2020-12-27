@@ -55,14 +55,56 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         backgroundColor: Colors.grey[900],
         body: Center(
-          child: new Column(
+          child: new Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ComponentWidget(name: "Comp0", controls: ["OE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+              new Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ComponentWidget(name: "Comp0", controls: ["OE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                  new Padding(
+                    padding: EdgeInsets.all(20)
+                  ),
+                  ComponentWidget(name: "Comp2", controls: ["WE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                  new Padding(
+                    padding: EdgeInsets.all(20)
+                  ),
+                  ComponentWidget(name: "Comp4", controls: ["OE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                  new Padding(
+                    padding: EdgeInsets.all(20)
+                  ),
+                  ComponentWidget(name: "Comp6", controls: ["WE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                  new Padding(
+                    padding: EdgeInsets.all(20)
+                  ),
+                  ComponentWidget(name: "Comp8", controls: ["OE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                ]
+              ),
               new Padding(
                 padding: EdgeInsets.all(20)
               ),
-              ComponentWidget(name: "Comp1", controls: ["WE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"])
+              new Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ComponentWidget(name: "Comp1", controls: ["OE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                  new Padding(
+                    padding: EdgeInsets.all(20)
+                  ),
+                  ComponentWidget(name: "Comp3", controls: ["WE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                  new Padding(
+                    padding: EdgeInsets.all(20)
+                  ),
+                  ComponentWidget(name: "Comp5", controls: ["OE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                  new Padding(
+                    padding: EdgeInsets.all(20)
+                  ),
+                  ComponentWidget(name: "Comp7", controls: ["WE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                  new Padding(
+                    padding: EdgeInsets.all(20)
+                  ),
+                  ComponentWidget(name: "Comp9", controls: ["OE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
+                ]
+              ),
             ]
           )
         )

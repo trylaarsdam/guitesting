@@ -68,7 +68,7 @@ class _ComponentWidgetState extends State<ComponentWidget>{
             children:[
               new Center(
                 child: ToggleButtons(
-                  color: Colors.grey,
+                  color: Colors.grey[850],
                   selectedColor: Colors.white,
                   selectedBorderColor: Colors.transparent,
                   borderColor: Colors.transparent,
