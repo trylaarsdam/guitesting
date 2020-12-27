@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 class ComponentWidget extends StatefulWidget {
-  ComponentWidget({Key key, this.title}) : super(key: key);
-  final String title;
+  final String name;
+  ComponentWidget({this.name});
 
   @override
   _ComponentWidgetState createState() => _ComponentWidgetState();
@@ -42,7 +42,7 @@ class _ComponentWidgetState extends State<ComponentWidget>{
                 child: new Card(
                   child: Padding(
                     padding: EdgeInsets.all(10.0),
-                    child: new Text("Component", style: TextStyle(color: Colors.black, fontSize:22), textAlign: TextAlign.center,)
+                    child: new Text(widget.name, style: TextStyle(color: Colors.black, fontSize:22), textAlign: TextAlign.center,)
                   )
                 ),
               ),
@@ -52,7 +52,7 @@ class _ComponentWidgetState extends State<ComponentWidget>{
                   new Card(
                     child: Padding(
                       padding: EdgeInsets.all(10),
-                      child: new Text("f2", style: TextStyle(color: Colors.black, fontSize:22, fontFamily:'RobotoMono'), textAlign: TextAlign.center,)
+                      child: new Text("f3", style: TextStyle(color: Colors.black, fontSize:22, fontFamily:'RobotoMono'), textAlign: TextAlign.center,)
                     )
                   )
               ),
