@@ -41,9 +41,22 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  bool _value0 = false;
+  void _value0Changed(bool value) => setState(() => _value0 = value);
   bool _value1 = false;
-
   void _value1Changed(bool value) => setState(() => _value1 = value);
+  bool _value2 = false;
+  void _value2Changed(bool value) => setState(() => _value2 = value);
+  bool _value3 = false;
+  void _value3Changed(bool value) => setState(() => _value3 = value);
+  bool _value4 = false;
+  void _value4Changed(bool value) => setState(() => _value4 = value);
+  bool _value5 = false;
+  void _value5Changed(bool value) => setState(() => _value5 = value);
+  bool _value6 = false;
+  void _value6Changed(bool value) => setState(() => _value6 = value);
+  bool _value7 = false;
+  void _value7Changed(bool value) => setState(() => _value7 = value);
 
   @override
   Widget build(BuildContext context) {
@@ -63,21 +76,67 @@ class _MyHomePageState extends State<MyHomePage> {
               color: Colors.purple[900],
               borderRadius: BorderRadius.all(Radius.circular(20.0))
             ),
-            child: new Row(
+            child: new Column(
               children: [
-                new Card(
-                  child: Padding(
-                    padding: EdgeInsets.all(15.0),
-                    child: new Text("CPU Component", style: TextStyle(color: Colors.black, fontSize:22), textAlign: TextAlign.center,)
-                  )
+                new Row(
+                  children: [
+                    new Expanded(
+                      child: new Card(
+                        child: Padding(
+                          padding: EdgeInsets.all(10.0),
+                          child: new Text("CPU Component", style: TextStyle(color: Colors.black, fontSize:22), textAlign: TextAlign.center,)
+                        )
+                      ),
+                    ),
+                    new SizedBox(
+                      width: 75,
+                      child:
+                        new Card(
+                          child: Padding(
+                            padding: EdgeInsets.all(10),
+                            child: new Text("0", style: TextStyle(color: Colors.black, fontSize:22), textAlign: TextAlign.center,)
+                          )
+                        )
+                    )
+                  ]
                 ),
-                new Column(
+                
+                new Row(
                   children:[
-                    new Checkbox(value: _value1, onChanged:_value1Changed),
+                    new Expanded(
+                      child: new Checkbox(value: _value7, onChanged:_value7Changed),
+                    ),
+                    new Expanded(
+                      child: new Checkbox(value: _value6, onChanged:_value6Changed),
+                    ),
+                    new Expanded(
+                      child: new Checkbox(value: _value5, onChanged:_value5Changed),
+                    ),
+                    new Expanded(
+                      child: new Checkbox(value: _value4, onChanged:_value4Changed),
+                    ),
+                    new Expanded(
+                      child: new Checkbox(value: _value3, onChanged:_value3Changed),
+                    ),
+                    new Expanded(
+                      child: new Checkbox(value: _value2, onChanged:_value2Changed),
+                    ),
+                    new Expanded(
+                      child: Tooltip(
+                        message: 'CLR',
+                        child: new Checkbox(value: _value1, onChanged:_value1Changed),
+                      )
+                    ),
+                    new Expanded(
+                      child: Tooltip(
+                        message: 'OE',
+                        child: new Checkbox(value: _value0, onChanged:_value0Changed),
+                      )
+                    ),
                   ]
                 )
               ],
-            )
+            ),
           )
         )
       ),
