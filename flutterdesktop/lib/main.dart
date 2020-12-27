@@ -40,6 +40,11 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  bool _value1 = false;
+
+  void _value1Changed(bool value) => setState(() => _value1 = value);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -47,25 +52,34 @@ class _MyHomePageState extends State<MyHomePage> {
       home: Scaffold(
         appBar: AppBar(
           title: Text('CPU Scaffold Testing'),
-          backgroundColor: Colors.indigo,
+          backgroundColor: Colors.blue[900],
         ),
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.grey[900],
         body: Center(
           child: Container(
             width: 300,
             height: 200,
             decoration: BoxDecoration(
-              color: Colors.green,
-              borderRadius: BorderRadius.all(Radius.circular(10.0))
+              color: Colors.purple[900],
+              borderRadius: BorderRadius.all(Radius.circular(20.0))
             ),
-            child: new Center(
-              child: new Text(
-                "Rounded Corner Rectangle Shape",
-                style: TextStyle(color: Colors.white, fontSize:22),
-                textAlign: TextAlign.center,)
+            child: new Row(
+              children: [
+                new Card(
+                  child: Padding(
+                    padding: EdgeInsets.all(15.0),
+                    child: new Text("CPU Component", style: TextStyle(color: Colors.black, fontSize:22), textAlign: TextAlign.center,)
+                  )
+                ),
+                new Column(
+                  children:[
+                    new Checkbox(value: _value1, onChanged:_value1Changed),
+                  ]
+                )
+              ],
             )
           )
-        ),
+        )
       ),
     );
   }
