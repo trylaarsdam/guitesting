@@ -94,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         new Card(
                           child: Padding(
                             padding: EdgeInsets.all(10),
-                            child: new Text("5E", style: TextStyle(color: Colors.black, fontSize:22), textAlign: TextAlign.center,)
+                            child: new Text("f2", style: TextStyle(color: Colors.black, fontSize:22, fontFamily:'RobotoMono'), textAlign: TextAlign.center,)
                           )
                         )
                     )
