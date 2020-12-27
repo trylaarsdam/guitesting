@@ -77,6 +77,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 new Row(
                   children: [
+                    new Padding(
+                      padding:EdgeInsets.all(2.5),
+                    ),
                     new Expanded(
                       child: new Card(
                         child: Padding(
@@ -94,6 +97,9 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: new Text("f2", style: TextStyle(color: Colors.black, fontSize:22, fontFamily:'RobotoMono'), textAlign: TextAlign.center,)
                           )
                         )
+                    ),
+                    new Padding(
+                      padding: EdgeInsets.all(2.5),
                     )
                   ]
                 ),
@@ -116,33 +122,54 @@ class _MyHomePageState extends State<MyHomePage> {
                               child: Icon(Icons.arrow_drop_down_circle_outlined)
                             ),
                           ),
-                          Transform.rotate(
-                            angle: math.pi,
-                            child: Icon(Icons.arrow_drop_down_circle_outlined)
+                          Tooltip(
+                            message: 'None',
+                            child: Transform.rotate(
+                              angle: math.pi,
+                              child: Icon(Icons.arrow_drop_down_circle_outlined)
+                            ),
                           ),
-                          Transform.rotate(
-                            angle: math.pi,
-                            child: Icon(Icons.arrow_drop_down_circle_outlined)
+                          Tooltip(
+                            message: 'None',
+                            child: Transform.rotate(
+                              angle: math.pi,
+                              child: Icon(Icons.arrow_drop_down_circle_outlined)
+                            ),
                           ),
-                          Transform.rotate(
-                            angle: math.pi,
-                            child: Icon(Icons.arrow_drop_down_circle_outlined)
+                          Tooltip(
+                            message: 'None',
+                            child: Transform.rotate(
+                              angle: math.pi,
+                              child: Icon(Icons.arrow_drop_down_circle_outlined)
+                            ),
                           ),
-                          Transform.rotate(
-                            angle: math.pi,
-                            child: Icon(Icons.arrow_drop_down_circle_outlined)
+                          Tooltip(
+                            message: 'None',
+                            child: Transform.rotate(
+                              angle: math.pi,
+                              child: Icon(Icons.arrow_drop_down_circle_outlined)
+                            ),
                           ),
-                          Transform.rotate(
-                            angle: math.pi,
-                            child: Icon(Icons.arrow_drop_down_circle_outlined)
+                          Tooltip(
+                            message: 'LOAD',
+                            child: Transform.rotate(
+                              angle: math.pi,
+                              child: Icon(Icons.arrow_drop_down_circle_outlined)
+                            ),
                           ),
-                          Transform.rotate(
-                            angle: math.pi,
-                            child: Icon(Icons.arrow_drop_down_circle_outlined)
+                          Tooltip(
+                            message: 'CLR',
+                            child: Transform.rotate(
+                              angle: math.pi,
+                              child: Icon(Icons.arrow_drop_down_circle_outlined)
+                            ),
                           ),
-                          Transform.rotate(
-                            angle: math.pi,
-                            child: Icon(Icons.arrow_drop_down_circle_outlined)
+                          Tooltip(
+                            message: 'OE',
+                            child: Transform.rotate(
+                              angle: math.pi,
+                              child: Icon(Icons.arrow_drop_down_circle_outlined)
+                            ),
                           ),
                         ],
                         onPressed: (int index) {
