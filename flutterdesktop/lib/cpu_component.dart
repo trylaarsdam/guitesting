@@ -18,7 +18,7 @@ class _ComponentWidgetState extends State<ComponentWidget>{
       width: 400,
       height: 120,
       decoration: BoxDecoration(
-        color: Colors.blue[900],
+        color: Colors.blue[700],
         borderRadius: BorderRadius.all(Radius.circular(20.0)),
         boxShadow: [
           BoxShadow(
