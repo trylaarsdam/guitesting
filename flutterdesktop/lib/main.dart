@@ -57,20 +57,31 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Center(
           child: Container(
             width: 400,
-            height: 200,
+            height: 120,
             decoration: BoxDecoration(
-              color: Colors.purple[900],
-              borderRadius: BorderRadius.all(Radius.circular(20.0))
+              color: Colors.blue[900],
+              borderRadius: BorderRadius.all(Radius.circular(20.0)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.5),
+                  spreadRadius: 5,
+                  blurRadius: 7,
+                  offset: Offset(0, 3), // changes position of shadow
+                ),
+              ],
             ),
             child: new Column(
               children: [
+                new Padding(
+                  padding: EdgeInsets.all(2.5),
+                ),
                 new Row(
                   children: [
                     new Expanded(
                       child: new Card(
                         child: Padding(
                           padding: EdgeInsets.all(10.0),
-                          child: new Text("CPU Component", style: TextStyle(color: Colors.black, fontSize:22), textAlign: TextAlign.center,)
+                          child: new Text("Component", style: TextStyle(color: Colors.black, fontSize:22), textAlign: TextAlign.center,)
                         )
                       ),
                     ),
@@ -88,13 +99,22 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 
                 new Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children:[
-                    new Expanded(
+                    new Center(
                       child: ToggleButtons(
+                        color: Colors.grey,
+                        selectedColor: Colors.white,
+                        selectedBorderColor: Colors.transparent,
+                        borderColor: Colors.transparent,
+                        borderWidth: 1, 
                         children: [
-                          Transform.rotate(
-                            angle: math.pi,
-                            child: Icon(Icons.arrow_drop_down_circle_outlined)
+                          Tooltip(
+                            message: 'None',
+                            child: Transform.rotate(
+                              angle: math.pi,
+                              child: Icon(Icons.arrow_drop_down_circle_outlined)
+                            ),
                           ),
                           Transform.rotate(
                             angle: math.pi,
