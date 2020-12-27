@@ -3,7 +3,8 @@ import 'dart:math' as math;
 
 class ComponentWidget extends StatefulWidget {
   final String name;
-  ComponentWidget({this.name});
+  var controls = List.filled(8, "None");
+  ComponentWidget({this.name, this.controls});
 
   @override
   _ComponentWidgetState createState() => _ComponentWidgetState();
@@ -74,56 +75,56 @@ class _ComponentWidgetState extends State<ComponentWidget>{
                   borderWidth: 1, 
                   children: [
                     Tooltip(
-                      message: 'None',
+                      message: widget.controls[7],
                       child: Transform.rotate(
                         angle: math.pi,
                         child: Icon(Icons.arrow_drop_down_circle_outlined)
                       ),
                     ),
                     Tooltip(
-                      message: 'None',
+                      message: widget.controls[6],
                       child: Transform.rotate(
                         angle: math.pi,
                         child: Icon(Icons.arrow_drop_down_circle_outlined)
                       ),
                     ),
                     Tooltip(
-                      message: 'None',
+                      message: widget.controls[5],
                       child: Transform.rotate(
                         angle: math.pi,
                         child: Icon(Icons.arrow_drop_down_circle_outlined)
                       ),
                     ),
                     Tooltip(
-                      message: 'None',
+                      message: widget.controls[4],
                       child: Transform.rotate(
                         angle: math.pi,
                         child: Icon(Icons.arrow_drop_down_circle_outlined)
                       ),
                     ),
                     Tooltip(
-                      message: 'None',
+                      message: widget.controls[3],
                       child: Transform.rotate(
                         angle: math.pi,
                         child: Icon(Icons.arrow_drop_down_circle_outlined)
                       ),
                     ),
                     Tooltip(
-                      message: 'LOAD',
+                      message: widget.controls[2],
                       child: Transform.rotate(
                         angle: math.pi,
                         child: Icon(Icons.arrow_drop_down_circle_outlined)
                       ),
                     ),
                     Tooltip(
-                      message: 'CLR',
+                      message: widget.controls[1],
                       child: Transform.rotate(
                         angle: math.pi,
                         child: Icon(Icons.arrow_drop_down_circle_outlined)
                       ),
                     ),
                     Tooltip(
-                      message: 'OE',
+                      message: widget.controls[0],
                       child: Transform.rotate(
                         angle: math.pi,
                         child: Icon(Icons.arrow_drop_down_circle_outlined)

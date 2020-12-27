@@ -58,11 +58,11 @@ class _MyHomePageState extends State<MyHomePage> {
           child: new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ComponentWidget(name: "Comp0"),
+              ComponentWidget(name: "Comp0", controls: ["OE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"]),
               new Padding(
                 padding: EdgeInsets.all(20)
               ),
-              ComponentWidget(name: "Comp1")
+              ComponentWidget(name: "Comp1", controls: ["WE", "CLR", "LOAD", "NONE", "NONE", "NONE", "NONE", "NONE"])
             ]
           )
         )
